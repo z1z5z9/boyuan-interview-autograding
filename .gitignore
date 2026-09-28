@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# 构建产物（grade 运行 task4 的 Makefile 时生成）
+task4/output_images/
+task4/processed_images.zip
+task4/.docker_image_built
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 本地参考缓存（旧仓资产，不进入模板仓）
+.cache/
+
+# 本地测试用 quiz 答案（勿提交）
+quiz-answers.txt
+
+# 系统文件
+.DS_Store
+
+# 注意：autograding_report.json 不在此忽略列表中。
+# 候选人必须 commit 此报告单，push 后触发 Actions 解密展示。

@@ -1,0 +1,12 @@
+# 预置的 Docker Compose 文件：起一个最小 nginx 服务。
+# task2 分工（ADR-0002）：候选人手动 up/down，grader 只验证。
+#   候选人：docker compose -f task2/compose.yml up -d
+#   grader：docker compose -f task2/compose.yml ps + curl http://localhost:8080
+#   候选人：docker compose -f task2/compose.yml down   # grade 结束后清理
+# 候选人不修改此文件。
+services:
+  nginx:
+    image: nginx:latest
+    container_name: autograding-task2-nginx
+    ports:
+      - "8080:80"
